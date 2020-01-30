@@ -19,7 +19,8 @@ for file in filelist:
     # split the file into filename and extension
     filename, extension = os.path.splitext(file)
     # if the extension is a valid extension
-    #if ( extension in extensions ):
+    if extension  == '.LRV':
+        extension += '.mp4'
     # Get the create time of the file
     create_time = os.path.getctime( file )
     # get the readable timestamp format 
